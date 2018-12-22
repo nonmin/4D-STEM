@@ -4,3 +4,4 @@ To run the GUI ronch_rover.py based on Bokeh library:
 ```
 bokeh serve --show ronch_rover.py
 ```
+(gui_demo.png)
