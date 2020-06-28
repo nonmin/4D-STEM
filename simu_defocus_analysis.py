@@ -66,7 +66,7 @@ L = np.zeros((n+1,2048))
 fig = plt.figure(figsize=(20, 10))
 for i in range(n+1):
     ax = fig.add_subplot(3,3,(i+1))
-    L[i,:]= ans=euclidean_distances(raw, bs[i,:].reshape(1,16800)).flatten()
+    L[i,:] = euclidean_distances(raw, bs[i,:].reshape(1,16800)).flatten()
     plt.imshow((1/L[i,:]).reshape(32,64),cmap=plt.cm.viridis)
     plt.title('cluster_%s'%i)
     plt.axis('off')
